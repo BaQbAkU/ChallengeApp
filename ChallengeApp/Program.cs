@@ -1,70 +1,47 @@
-﻿int number = 4594;
-string numberAsString = number.ToString();
-char[] letters = numberAsString.ToArray();
+﻿
 
-int counter0 = 0;
-int counter1 = 0;
-int counter2 = 0;
-int counter3 = 0;
-int counter4 = 0;
-int counter5 = 0;
-int counter6 = 0;
-int counter7 = 0;
-int counter8 = 0;
-int counter9 = 0;
 
-foreach (char letter in letters)
+using ChallengeApp;
+
+Empoyye Empoyee1 = new Empoyye("Adam", "Kamizelich", 30);
+Empoyye Empoyee2 = new Empoyye("Zuzia", "Zuziazła", 21);
+Empoyye Empoyee3 = new Empoyye("Bartosz", "Michalczewski", 35);
+
+
+
+Empoyee1.AddScore(5);
+Empoyee1.AddScore(5);
+Empoyee1.AddScore(5);
+Empoyee1.AddScore(5);
+Empoyee1.AddScore(5);
+Empoyee2.AddScore(10);
+Empoyee2.AddScore(10);
+Empoyee2.AddScore(10);
+Empoyee2.AddScore(10);
+Empoyee2.AddScore(10);
+Empoyee3.AddScore(3);
+Empoyee3.AddScore(3);
+Empoyee3.AddScore(3);
+Empoyee3.AddScore(3);
+Empoyee3.AddScore(3);
+
+var result1 = Empoyee1.Result;
+var result2 = Empoyee2.Result;
+var result3 = Empoyee3.Result;
+
+Console.WriteLine(result1);
+Console.WriteLine(result2);
+Console.WriteLine(result3);
+
+if (result1 > result2 && result1 > result3)
 {
-    if (letter == '0')
-    {
-        counter0++;
-    }
-
-    else if (letter == '1')
-    {
-        counter1++;
-    }
-    else if (letter == '2')
-    {
-        counter2++;
-    }
-    else if (letter == '3')
-    {
-        counter3++;
-    }
-    else if (letter == '4')
-    {
-        counter4++;
-    }
-    else if (letter == '5')
-    {
-        counter5++;
-    }
-    else if (letter == '6')
-    {
-        counter6++;
-    }
-    else if (letter == '7')
-    {
-        counter7++;
-    }
-    else if (letter == '8')
-    {
-        counter8++;
-    }
-    else if (letter == '9')
-    {
-        counter9++;
-    }
+    Console.WriteLine("Najlepszy wynik osiągnoł" + Empoyee1.Name + Empoyee1.Surname + Empoyee1.Age + result1);
 }
-Console.WriteLine("Liczba:" + number);
-Console.WriteLine("zawiera zer-" + counter0);
-Console.WriteLine("zawiera jedynek-" + counter1);
-Console.WriteLine("zawiera dwujek-" + counter2);
-Console.WriteLine("zawiera trujek-" + counter3);
-Console.WriteLine("zawiera czwórek-" + counter4);
-Console.WriteLine("zawiera piątek-" + counter5);
-Console.WriteLine("zawiera szustek-" + counter6);
-Console.WriteLine("zawiera siódemek-" + counter7);
-Console.WriteLine("zawiera ósemek-" + counter8);
-Console.WriteLine("zawiera dziewiątek-" + counter9);
+else if (result2 > result1 && result2 > result3)
+{
+    Console.WriteLine("Najlepszy wynik osiągnoł" + Empoyee2.Name + Empoyee2.Surname + Empoyee2.Age + result2);
+}
+else if (result3 > result1 && result3 > result2)
+{
+    Console.WriteLine("Najlepszy wynik osiągnoł" + Empoyee3.Name + Empoyee3.Surname + Empoyee3.Age + result3);
+}
