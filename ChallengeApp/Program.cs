@@ -14,11 +14,14 @@ Empoyee1.AddScore(5);
 Empoyee1.AddScore(5);
 Empoyee1.AddScore(5);
 Empoyee1.AddScore(5);
+
 Empoyee2.AddScore(10);
 Empoyee2.AddScore(10);
 Empoyee2.AddScore(10);
 Empoyee2.AddScore(10);
 Empoyee2.AddScore(10);
+Empoyee2.AddScore(-2);
+
 Empoyee3.AddScore(3);
 Empoyee3.AddScore(3);
 Empoyee3.AddScore(3);
