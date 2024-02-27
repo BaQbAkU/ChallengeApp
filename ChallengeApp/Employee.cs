@@ -1,7 +1,7 @@
 ﻿
 namespace ChallengeApp;
 
-public class Empoyye
+public class Employee
 {
     public static string GameName = "Diablo";
 
@@ -11,7 +11,7 @@ public class Empoyye
     private string surname;
     private int age;
 
-    public Empoyye(string name, string surname, int age)
+    public Employee(string name, string surname, int age)
     {
         this.Name = name;
         this.Surname = surname;

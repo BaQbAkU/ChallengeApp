@@ -8,22 +8,22 @@ namespace ChallengeApp.Test
         [Test]
         public void WhenEmpoyeerCollectTwoSetOfPoints_ShouldReturnCorrectSumAsResult()
         {
-            var Empoyye = new Empoyye("Adam", "Kamizelich", 30);
-            Empoyye.AddScore(5);
-            Empoyye.AddScore(6);
+            var Employee = new Employee("Adam", "Kamizelich", 30);
+            Employee.AddScore(5);
+            Employee.AddScore(6);
 
-            var result = Empoyye.Result;
+            var result = Employee.Result;
             Assert.AreEqual(11, result);
         }
         [Test]
         public void WhenEmpoyeerCollectMinusPoints_ShouldReturnCorrectSumAsResult()
         {
-            var Empoyye = new Empoyye("Adam", "Kamizelich", 30);
-            Empoyye.AddScore(5);
-            Empoyye.AddScore(6);
-            Empoyye.AddScore(-1);
+            var Employee = new Employee("Adam", "Kamizelich", 30);
+            Employee.AddScore(5);
+            Employee.AddScore(6);
+            Employee.AddScore(-1);
 
-            var result = Empoyye.Result;
+            var result = Employee.Result;
             Assert.AreEqual(10,result);
         }
     }
