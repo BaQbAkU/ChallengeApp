@@ -8,7 +8,7 @@ namespace ChallengeApp.Test
         [Test]
         public void WhenEmpoyeerCollectTwoSetOfPoints_ShouldReturnCorrectSumAsResult()
         {
-            var Employee = new Employee("Adam", "Kamizelich", 30);
+            var Employee = new employee("Adam", "Kamizelich", 30);
             Employee.AddScore(5);
             Employee.AddScore(6);
 
@@ -18,7 +18,7 @@ namespace ChallengeApp.Test
         [Test]
         public void WhenEmpoyeerCollectMinusPoints_ShouldReturnCorrectSumAsResult()
         {
-            var Employee = new Employee("Adam", "Kamizelich", 30);
+            var Employee = new employee("Adam", "Kamizelich", 30);
             Employee.AddScore(5);
             Employee.AddScore(6);
             Employee.AddScore(-1);

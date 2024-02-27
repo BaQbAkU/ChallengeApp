@@ -3,9 +3,9 @@
 
 using ChallengeApp;
 
-Employee Employee1 = new Employee("Adam", "Kamizelich", 30);
-Employee Employee2 = new Employee("Zuzia", "Zuziazła", 21);
-Employee Employee3 = new Employee("Bartosz", "Michalczewski", 35);
+employee Employee1 = new employee("Adam", "Kamizelich", 30);
+employee Employee2 = new employee("Zuzia", "Zuziazła", 21);
+employee Employee3 = new employee("Bartosz", "Michalczewski", 35);
 
 
 
@@ -38,13 +38,13 @@ Console.WriteLine(result3);
 
 if (result1 > result2 && result1 > result3)
 {
-    Console.WriteLine("Najlepszy wynik osiągnoł" + Employee1.Name + Employee1.Surname + Employee1.Age + result1);
+    Console.WriteLine("Najlepszy" + "  " + "wynik"  + "  " + "osiągnoł" + "  " + "pan" + "  " + Employee1.Name + "  " + Employee1.Surname + "  " + "lat" + "  " + Employee1.Age + "  " + "ilością punktów" + "  " + result1 + "  " + "GRATULACJE!!");
 }
 else if (result2 > result1 && result2 > result3)
 {
-    Console.WriteLine("Najlepszy wynik osiągnoł" + Employee2.Name + Employee2.Surname + Employee2.Age + result2);
+    Console.WriteLine("Najlepszy" + "  " + "wynik" + "  " + "osiągnęła" + "  " + "pani" + "  " + Employee2.Name + "  " + Employee2.Surname + "  " + "lat" + "  " + Employee2.Age + "  " + "ilością punktów" + "  " + result2 + "  " + "GRATULACJE!!");
 }
 else if (result3 > result1 && result3 > result2)
 {
-    Console.WriteLine("Najlepszy wynik osiągnoł" + Employee3.Name + Employee3.Surname + Employee3.Age + result3);
+    Console.WriteLine("Najlepszy" + "  " + "wynik" + "  " + "osiągnoł" + "  " + "pan" + "  " + Employee3.Name + "  " + Employee3.Surname + "  " + "lat" + "  " + Employee3.Age + "  " + "ilością punktów" + "  " + result3 + "  " + "GRATULACJE!!");
 }
